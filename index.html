@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Custom Form</title>
+
+    <meta name="bs:input:buttonName" content="type=string,description=Display name for the button" />
+
+	<meta name="bs:output:firstName" content="type=string,description=The first name of the user" />
+	<meta name="bs:output:lastName" content="type=string,description=The last name of the user" />
+	<meta name="bs:output:address" content="type=string,description=The address of the user" />
+	<meta name="bs:output:mobile" content="type=string,description=The address of the user" />
+	<meta name="bs:output:email" content="type=string,description=The address of the user" />
+
+	<meta name="bs:output:blocker" content="type=string,description=The address of the user" />
+
+	<meta name="bs:outlet:Button Clicked" />
+
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <div class="container">
+      <form class="form" id="myForm">
+		<h2 class="form">Custom Form</h2>
+		
+        <div class="form-group">
+  		  <label for="FirstName">First Name</label>
+  		  <input type="text" id="inputWebFName" name="FirstName" class="form-control" placeholder="First Name" required autofocus>
+		 </div>
+		 
+  		<div class="form-group">
+  		  <label for="LastName">Last Name</label>
+          <input type="text" id="inputWebLName" name="LastName" class="form-control" placeholder="Last Name" required>
+		</div>
+		 
+ 	    <div class="form-group">
+  		  <label for="Address">Address</label>
+          <input type="text" id="inputWebAddress" name="Address" class="form-control" placeholder="Address" required>
+		</div>
+
+		<div class="form-group">
+  		  <label for="Mobile">Mobile</label>
+          <input type="text" id="inputWebMobile" name="Mobile" class="form-control" placeholder="Mobile" required>
+		</div>
+
+		<div class="form-group">
+  		  <label for="Email">Email</label>
+          <input type="text" id="inputEmail" name="Email" class="form-control" placeholder="Email" required>
+		</div>
+		
+		<button id="btn" onclick="sendResponse()">Done</button>
+
+	  </form>
+
+    </div> <!-- /container -->
+
+	<script src="/js/script.js"></script>
+
+
+	 <!--
+      BotStar Webview SDK is required if you want to use BotStarWebview's functions.
+      Function onChatBotReady will be called when BotStarWebview is ready to use.
+    -->
+	
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+	<script defer src="https://static.botstar.com/webview/sdk/webview-sdk-1.0.0.js"></script>
+</body>
+</html>
